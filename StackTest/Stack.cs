@@ -28,7 +28,7 @@ namespace StackTest
             top = -1; // stack initially empty
         }
 
-        // push element onto the atack; if unsuccessfull, throw FullStackException
+        // push element onto the stack; if unsuccessfull, throw FullStackException
         public void Push(T pushValue)
         {
             if (top == elements.Length - 1)
@@ -46,6 +46,9 @@ namespace StackTest
             {
                 throw new EmptyStackException("Stack is empty, cannot pop");
             }
+
+            --top; // decrement top
+            return elements[top + 1]; // return top value
         }
     }
 }

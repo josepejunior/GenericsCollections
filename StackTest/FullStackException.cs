@@ -6,12 +6,12 @@ namespace StackTest
     public class FullStackException : Exception
     {
         // parameterless constructor
-        public FullStackException()
+        public FullStackException() : base("Stack is full")
         {
         }
 
         // one-parameter constructor
-        public FullStackException(string? message) : base("Stack is full")
+        public FullStackException(string? message) : base(message)
         {
             // empty constructor
         }

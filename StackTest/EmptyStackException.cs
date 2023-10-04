@@ -6,12 +6,12 @@ namespace StackTest
     public class EmptyStackException : Exception
     {
         // parameterless constructor
-        public EmptyStackException()
+        public EmptyStackException() : base("Stack is empty")
         {
         }
 
         // one-parameter constructor
-        public EmptyStackException(string? message) : base("Stack is empty")
+        public EmptyStackException(string? message) : base(message)
         {
             // empty constructor
         }
