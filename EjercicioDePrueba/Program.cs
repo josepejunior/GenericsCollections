@@ -1,3 +1,3 @@
 ﻿using EjercicioDePrueba;
 
-string 
+var team = new Team();

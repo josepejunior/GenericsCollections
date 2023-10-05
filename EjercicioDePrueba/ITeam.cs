@@ -8,8 +8,8 @@ namespace EjercicioDePrueba
 {
     public interface ITeam
     {
-        public string Nombre { get; set; }
-        public double Peso { get; set; }
-        public double Altura { get; set; }
+        string Nombre { get; set; }
+        double Peso { get; set; }
+        double Altura { get; set; }
     }
 }
