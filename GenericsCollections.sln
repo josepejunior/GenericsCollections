@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumTest", "MaximunTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTest", "StackTest\StackTest.csproj", "{72673A7E-AF69-49D9-81F1-56B37E69BB29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioDePrueba", "EjercicioDePrueba\EjercicioDePrueba.csproj", "{19A7716A-C2E3-4205-93B9-E4F614BF2364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Team", "EjercicioDePrueba\Team.csproj", "{19A7716A-C2E3-4205-93B9-E4F614BF2364}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

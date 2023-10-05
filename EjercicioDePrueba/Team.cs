@@ -3,33 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EjercicioDePrueba;
+using Team;
 
-namespace EjercicioDePrueba
+namespace Team
 {
-    public class Team
+    public class Team<T> where T : IAtleta
     {
-        public string CoachName { get; set; }
-        public string Nombre { get; set; }
-        public double Peso { get; set; }
-        public double Altura { get; set; }
-        public string Posicion {  get; set; }
-        public int GolesOjuegos {  get; set; }
+        public string NombreCoach { get; set; }
 
-        public Team(string coachName, string nombre, double peso, double altura, string posicion, int golesOjuegos)
+        public T[] Miembros { get; set; }
+
+        public Team(int maxMiembros)
         {
-            CoachName = coachName;
-            Nombre = nombre;
-            Peso = peso;
-            Altura = altura;
-            Posicion = posicion;
-            GolesOjuegos = golesOjuegos;
-        }
-
-
-        public void GetAtletas()
-        {
-
+            Miembros = new T[maxMiembros];
         }
     }
 }

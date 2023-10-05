@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioDePrueba
+namespace Team
 {
-    public interface ITeam
+    public interface IAtleta
     {
         string Nombre { get; set; }
         double Peso { get; set; }
