@@ -11,23 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTest", "StackTest\Stac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Team", "EjercicioDePrueba\Team.csproj", "{19A7716A-C2E3-4205-93B9-E4F614BF2364}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaList", "..\EjercicioColecciones\PruebaList\PruebaList.csproj", "{6FC9D77C-BF02-44C0-94AD-A91D3BCA76B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaHashSet", "PruebaHashSet\PruebaHashSet.csproj", "{C97DE9F4-D1C3-4C4A-97C1-16C831674155}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaColecciones", "..\EjercicioColecciones\PruebaColecciones\PruebaColecciones.csproj", "{75F0400D-8DDD-4FD4-A290-E28B6895AE40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaDictionary", "PruebaDictionary\PruebaDictionary.csproj", "{08BC0BE3-8F29-42AC-B29D-03DFAF28C8D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modelo", "..\..\GenericsCollections\Modelo\Modelo.csproj", "{750A422A-6272-4062-A6AB-C9E698B0CFAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaSortedList", "PruebaSortedList\PruebaSortedList.csproj", "{DA615066-486F-40FD-9E9E-B53CCC01AF96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaLinkedList", "..\..\GenericsCollections\PruebaLinkedList\PruebaLinkedList.csproj", "{B746B40B-C1CD-4FF6-B55E-DB8E2C104E90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{D3070C37-F60E-4E04-90B0-BB80A035948C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaQueue", "..\..\GenericsCollections\PruebaQueue\PruebaQueue.csproj", "{4EAC1BFF-76D4-45CB-9D41-5A4192A45C64}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaStack", "..\..\GenericsCollections\PruebaStack\PruebaStack.csproj", "{60FFCD7B-AA07-4239-A0F9-9FDD1BCBC1A8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaHashSet", "PruebaHashSet\PruebaHashSet.csproj", "{C97DE9F4-D1C3-4C4A-97C1-16C831674155}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaDictionary", "PruebaDictionary\PruebaDictionary.csproj", "{08BC0BE3-8F29-42AC-B29D-03DFAF28C8D5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSortedList", "PruebaSortedList\PruebaSortedList.csproj", "{DA615066-486F-40FD-9E9E-B53CCC01AF96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad17-10", "Actividad17-10\Actividad17-10.csproj", "{040A94A5-61F0-4A9F-8098-250B12333288}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,30 +43,6 @@ Global
 		{19A7716A-C2E3-4205-93B9-E4F614BF2364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A7716A-C2E3-4205-93B9-E4F614BF2364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A7716A-C2E3-4205-93B9-E4F614BF2364}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6FC9D77C-BF02-44C0-94AD-A91D3BCA76B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FC9D77C-BF02-44C0-94AD-A91D3BCA76B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FC9D77C-BF02-44C0-94AD-A91D3BCA76B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FC9D77C-BF02-44C0-94AD-A91D3BCA76B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75F0400D-8DDD-4FD4-A290-E28B6895AE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75F0400D-8DDD-4FD4-A290-E28B6895AE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75F0400D-8DDD-4FD4-A290-E28B6895AE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75F0400D-8DDD-4FD4-A290-E28B6895AE40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{750A422A-6272-4062-A6AB-C9E698B0CFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{750A422A-6272-4062-A6AB-C9E698B0CFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{750A422A-6272-4062-A6AB-C9E698B0CFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{750A422A-6272-4062-A6AB-C9E698B0CFAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B746B40B-C1CD-4FF6-B55E-DB8E2C104E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B746B40B-C1CD-4FF6-B55E-DB8E2C104E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B746B40B-C1CD-4FF6-B55E-DB8E2C104E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B746B40B-C1CD-4FF6-B55E-DB8E2C104E90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EAC1BFF-76D4-45CB-9D41-5A4192A45C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EAC1BFF-76D4-45CB-9D41-5A4192A45C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EAC1BFF-76D4-45CB-9D41-5A4192A45C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EAC1BFF-76D4-45CB-9D41-5A4192A45C64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60FFCD7B-AA07-4239-A0F9-9FDD1BCBC1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60FFCD7B-AA07-4239-A0F9-9FDD1BCBC1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60FFCD7B-AA07-4239-A0F9-9FDD1BCBC1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60FFCD7B-AA07-4239-A0F9-9FDD1BCBC1A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C97DE9F4-D1C3-4C4A-97C1-16C831674155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C97DE9F4-D1C3-4C4A-97C1-16C831674155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C97DE9F4-D1C3-4C4A-97C1-16C831674155}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +55,14 @@ Global
 		{DA615066-486F-40FD-9E9E-B53CCC01AF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA615066-486F-40FD-9E9E-B53CCC01AF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA615066-486F-40FD-9E9E-B53CCC01AF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3070C37-F60E-4E04-90B0-BB80A035948C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3070C37-F60E-4E04-90B0-BB80A035948C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3070C37-F60E-4E04-90B0-BB80A035948C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3070C37-F60E-4E04-90B0-BB80A035948C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040A94A5-61F0-4A9F-8098-250B12333288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040A94A5-61F0-4A9F-8098-250B12333288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040A94A5-61F0-4A9F-8098-250B12333288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040A94A5-61F0-4A9F-8098-250B12333288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
