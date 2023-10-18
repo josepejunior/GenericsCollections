@@ -11,7 +11,7 @@ namespace Actividad17_10
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmCashierWindowQueueForm());
+            Application.Run(new frmQueuing());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Actividad17_10
 {
-    partial class frmCashierWindowQueueForm
+    partial class frmQueuing
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@
             // 
             // btnCashier
             // 
-            this.btnCashier.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCashier.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCashier.Location = new System.Drawing.Point(12, 12);
             this.btnCashier.Name = "btnCashier";
             this.btnCashier.Size = new System.Drawing.Size(87, 73);
@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(137, 12);
+            this.label1.Location = new System.Drawing.Point(129, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 30);
             this.label1.TabIndex = 1;
@@ -58,11 +58,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 101);
+            this.label2.Location = new System.Drawing.Point(12, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 13);
+            this.label2.Size = new System.Drawing.Size(92, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "*Click to get a number";
             // 
@@ -70,24 +70,23 @@
             // 
             this.lblPositionQueue.AutoSize = true;
             this.lblPositionQueue.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPositionQueue.Location = new System.Drawing.Point(180, 48);
+            this.lblPositionQueue.Location = new System.Drawing.Point(156, 48);
             this.lblPositionQueue.Name = "lblPositionQueue";
-            this.lblPositionQueue.Size = new System.Drawing.Size(90, 37);
+            this.lblPositionQueue.Size = new System.Drawing.Size(52, 37);
             this.lblPositionQueue.TabIndex = 3;
-            this.lblPositionQueue.Text = "label3";
+            this.lblPositionQueue.Text = "     ";
             // 
-            // frmCashierWindowQueueForm
+            // frmQueuing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 130);
+            this.ClientSize = new System.Drawing.Size(324, 130);
             this.Controls.Add(this.lblPositionQueue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCashier);
-            this.Name = "frmCashierWindowQueueForm";
-            this.Text = "CashierWindowQueueForm";
-            this.Load += new System.EventHandler(this.frmCashierWindowQueueForm_Load);
+            this.Name = "frmQueuing";
+            this.Text = "QueuingForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

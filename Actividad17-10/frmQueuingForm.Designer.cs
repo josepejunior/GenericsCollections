@@ -1,6 +1,6 @@
 ﻿namespace Actividad17_10
 {
-    partial class frmQueuingForm
+    partial class frmCashierWindowQueue
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.txtQueue = new System.Windows.Forms.TextBox();
+            this.lvCashierQueue = new System.Windows.Forms.ListView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -42,6 +44,7 @@
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnNext
             // 
@@ -54,28 +57,32 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // txtQueue
+            // lvCashierQueue
             // 
-            this.txtQueue.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtQueue.Location = new System.Drawing.Point(88, 12);
-            this.txtQueue.Multiline = true;
-            this.txtQueue.Name = "txtQueue";
-            this.txtQueue.Size = new System.Drawing.Size(195, 292);
-            this.txtQueue.TabIndex = 2;
+            this.lvCashierQueue.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lvCashierQueue.Location = new System.Drawing.Point(97, 12);
+            this.lvCashierQueue.Name = "lvCashierQueue";
+            this.lvCashierQueue.Size = new System.Drawing.Size(189, 268);
+            this.lvCashierQueue.TabIndex = 2;
+            this.lvCashierQueue.UseCompatibleStateImageBehavior = false;
+            this.lvCashierQueue.View = System.Windows.Forms.View.Tile;
             // 
-            // frmQueuingForm
+            // timer1
+            // 
+            this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // frmCashierWindowQueue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 319);
-            this.Controls.Add(this.txtQueue);
+            this.ClientSize = new System.Drawing.Size(298, 292);
+            this.Controls.Add(this.lvCashierQueue);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnRefresh);
-            this.Name = "frmQueuingForm";
-            this.Text = "QueuingForm";
-            this.Load += new System.EventHandler(this.frmQueuingForm_Load);
+            this.Name = "frmCashierWindowQueue";
+            this.Text = "CashierWindowQueue";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -83,6 +90,7 @@
 
         private Button btnRefresh;
         private Button btnNext;
-        private TextBox txtQueue;
+        private ListView lvCashierQueue;
+        private System.Windows.Forms.Timer timer1;
     }
 }

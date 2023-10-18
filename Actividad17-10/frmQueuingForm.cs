@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,22 +11,37 @@ using System.Windows.Forms;
 
 namespace Actividad17_10
 {
-    public partial class frmQueuingForm : Form
+    public partial class frmCashierWindowQueue : Form
     {
-        string position;
-        public frmQueuingForm(string cont)
+        public frmCashierWindowQueue()
         {
-            position = cont;
             InitializeComponent();
         }
 
-        private void frmQueuingForm_Load(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            txtQueue.Text += position.ToString();
+            btnRefresh.PerformClick();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            Cashier.cashierQueue.Dequeue();
+            System.Windows.Forms.Timer timer = 
+                new System.Windows.Forms.Timer();
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(Cashier.cashierQueue);
+        }
+
+        private void DisplayCashierQueue(IEnumerable CashierList)
+        {
+            lvCashierQueue.Items.Clear();
+            foreach (string c in CashierList)
+                lvCashierQueue.Items.Add(c.ToString());
         }
     }
 }

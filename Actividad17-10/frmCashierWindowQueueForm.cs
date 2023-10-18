@@ -10,30 +10,22 @@ using System.Windows.Forms;
 
 namespace Actividad17_10
 {
-    public partial class frmCashierWindowQueueForm : Form
+    public partial class frmQueuing : Form
     {
-        int num = 0;
-        string cont;
-        public string[] conts;
+        Cashier cashier = new Cashier();
 
-        public frmCashierWindowQueueForm()
+        public frmQueuing()
         {
             InitializeComponent();
-        }
-
-        private void frmCashierWindowQueueForm_Load(object sender, EventArgs e)
-        {
-            num++;
-            lblPositionQueue.Text = "P - 1" + num.ToString("D4");
-            cont = lblPositionQueue.Text;
-            cont = cont;
+            frmCashierWindowQueue frmCashierWindowQueue = new frmCashierWindowQueue();
+            frmCashierWindowQueue.Show();
         }
 
         private void btnCashier_Click(object sender, EventArgs e)
-        { 
-            QueueCashier qCashier = new QueueCashier(conts);
-            //frmQueuingForm fr = new frmQueuingForm(cont);
-            //fr.ShowDialog();
+        {
+            lblPositionQueue.Text = cashier.CashierGeneratedNumber("P - ");
+            Cashier.getNumberInQueue = lblPositionQueue.Text;
+            Cashier.cashierQueue.Enqueue(Cashier.getNumberInQueue);
         }
     }
 }
