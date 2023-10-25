@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "Dictionary\Di
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad17-10", "Actividad17-10\Actividad17-10.csproj", "{040A94A5-61F0-4A9F-8098-250B12333288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaLambda", "PruebaLambda\PruebaLambda.csproj", "{5DC598AA-5A2E-4182-B134-060687F34D4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaLambda", "PruebaLambda\PruebaLambda.csproj", "{5DC598AA-5A2E-4182-B134-060687F34D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaLINQ", "PruebaLinQ\PruebaLINQ.csproj", "{0FF716A3-9ACC-46A7-B407-C8E317B92C6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{5DC598AA-5A2E-4182-B134-060687F34D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DC598AA-5A2E-4182-B134-060687F34D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DC598AA-5A2E-4182-B134-060687F34D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF716A3-9ACC-46A7-B407-C8E317B92C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF716A3-9ACC-46A7-B407-C8E317B92C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF716A3-9ACC-46A7-B407-C8E317B92C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF716A3-9ACC-46A7-B407-C8E317B92C6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
