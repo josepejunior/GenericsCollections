@@ -8,10 +8,17 @@ namespace EmpresaLINQ
 {
     public class Empleado
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Cargo { get; set; }
         public double Salario { get; set; }
-        public int EMpresaID { get; set; }
+        public int EmpresaID { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format($"Empleado {Name} con ID = {ID}, " +
+                $"cargo {Cargo}, salario {Salario} pertenece a la " +
+                $"empresa {EmpresaID}");
+        }
     }
 }
